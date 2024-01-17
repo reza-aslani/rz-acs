@@ -1,0 +1,77 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+    <SOAP-ENV:Header>
+        <cwmp:ID SOAP-ENV:mustUnderstand="1">37</cwmp:ID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <cwmp:Inform>
+            <DeviceId>
+                <Manufacturer>Huawei Technologies Co., Ltd</Manufacturer>
+                <OUI>00259E</OUI>
+                <ProductClass>HG8245H5</ProductClass>
+                <SerialNumber>48575443BC8C68A3</SerialNumber>
+            </DeviceId>
+            <Event SOAP-ENC:arrayType="cwmp:EventStruct[4]">
+                <EventStruct>
+                    <EventCode>0 BOOTSTRAP</EventCode>
+                    <CommandKey />
+                </EventStruct>
+                <EventStruct>
+                    <EventCode>1 BOOT</EventCode>
+                    <CommandKey />
+                </EventStruct>
+                <EventStruct>
+                    <EventCode>2 PERIODIC</EventCode>
+                    <CommandKey />
+                </EventStruct>
+                <EventStruct>
+                    <EventCode>4 VALUE CHANGE</EventCode>
+                    <CommandKey />
+                </EventStruct>
+            </Event>
+            <MaxEnvelopes>1</MaxEnvelopes>
+            <CurrentTime>2024-01-17T13:40:05+00:00</CurrentTime>
+            <RetryCount>9</RetryCount>
+            <ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[8]">
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.ParameterKey</Name>
+                    <Value xsi:type="xsd:string">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.ConnectionRequestURL</Name>
+                    <Value xsi:type="xsd:string">
+                        http://192.168.200.159:7547/c82524bfad8c2836a80606caed7e430b</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceSummary</Name>
+                    <Value xsi:type="xsd:string">InternetGatewayDevice:1.4[](Baseline:1,
+                        EthernetLAN:1, WiFiLAN:2, Time:1, IPPing:1, DeviceAssociation:1),
+                        VoiceService:1.0[1](Endpoint:1, SIPEndpoint:1)</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceInfo.SpecVersion</Name>
+                    <Value xsi:type="xsd:string">1.0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceInfo.HardwareVersion</Name>
+                    <Value xsi:type="xsd:string">150D.A</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceInfo.SoftwareVersion</Name>
+                    <Value xsi:type="xsd:string">V5R019C00S125</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceInfo.ProvisioningCode</Name>
+                    <Value xsi:type="xsd:string" />
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>
+                        InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress</Name>
+                    <Value xsi:type="xsd:string">192.168.200.159</Value>
+                </ParameterValueStruct>
+            </ParameterList>
+        </cwmp:Inform>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
